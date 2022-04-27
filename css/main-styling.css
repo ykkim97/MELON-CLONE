@@ -1,0 +1,956 @@
+
+/* 초기 설정(init) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-width: 1065px;
+}
+
+/* header styles */
+
+.header {
+    width: 100%;
+    height: 200px;
+    background: url(//cdnimg.melon.co.kr/resource/image/web/common/gnb_menu_repeat.jpg) repeat-x center top;
+}
+
+.header_inner {
+    margin: auto;
+    width: 1000px;
+    font-size: 13px;
+}
+
+.top_menu {
+    width: 100%;
+    height: 38px;
+    margin: auto;
+    padding-top: 10px;
+    color: #666;
+    white-space:nowrap;
+    font-size: 12px;
+}
+
+.top_left {
+    float: left;
+    margin-left: 10px;
+    letter-spacing: 0;
+    word-spacing: -3px;
+}
+
+.top_left a:link {
+    color: #666;
+}
+
+.top_left a:visited {
+    color: #666;
+}
+
+.top_left a:hover {
+    color: rgb(8, 173, 57);
+}
+
+.top_right {
+    float: right;
+}
+
+.top_right .ticketlink {
+    display: flex;
+    margin-top: -11px;
+}
+
+
+
+.top_right ul {
+    display: flex;
+    list-style: none;
+}
+
+.top_right li {
+    text-decoration: none;
+    text-align: center;
+    color: #666;
+}
+
+
+.top_right li a {
+    padding: 11px 7px;
+}
+
+.top_right li a:link {
+    color : #666;
+}
+
+.top_right li a:visited {
+    color: #666;
+}
+
+.top_right li a:hover {
+    color: black;
+}
+
+
+.menu {
+    clear: both;
+    height: 162px;
+}
+
+.menu .menu_top {
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
+.inputfield {
+    border: 2px;
+    width: 322px;
+}
+
+.inputDesign {
+    width: 322px;
+    height: 40px;
+    border: 2px solid #09c943;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.fa-search {
+    font-size: 23px;
+    color: #09c943;
+    padding-top: 5px;
+    position: relative;
+    left: 10px;
+    top: 2px;
+}
+
+#searchInput {
+    height: 23px;
+    width: 249px;
+    margin-left: 20px;
+    margin-top: 7px;
+    border: none;
+}
+
+#soaring {
+    padding-left: 5px;
+    margin-left: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    width: 42px;
+    height: 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #09c943;
+    color: white;
+    margin-top: 10px;
+}
+
+.realtime_soar_keyword {
+    display: flex;
+}
+
+.cmn_banner { 
+    width: 500px;
+    text-align: right;
+    z-index: 0;
+}
+
+.cmn_banner img {
+    width: 280px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menubar {
+    display: flex;
+}
+
+.menu_left {
+    display: flex;
+    list-style: none;  
+    height: 55px;
+    width: 80%;
+    font-weight: 600;
+    float: left;
+}
+
+.menu_left li {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    white-space:nowrap;
+}
+
+
+.menu_left li:link{
+    color: #1a1a1a;
+}
+
+.menu_left li:visited{
+    color: #1a1a1a;
+}
+
+.menu_left li:hover {
+    color: rgb(8, 173, 57);
+}
+
+.menu_right {
+    list-style: none;
+    height: 55px;
+    font-weight: 600;
+}
+
+.menu_right li {
+    font-size: 16px;
+    
+}
+
+.menu_right li:hover {
+    color: rgb(8, 173, 57);
+    cursor: pointer;
+}
+
+.menu_right span {
+    margin-left: 160px;
+    white-space:nowrap;
+}
+
+/* main styles */
+.main {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    bottom: 10px;
+}
+
+.new_album {
+    width: 480px;
+    height: 340px;
+    display: block;
+}
+
+.new_album h2 {
+    cursor: pointer;
+    font-size: 15px;
+    color: #1A1A1A;
+    display: block;
+    height: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-family: "맑은 고딕","Malgun Gothic","Apple Gothic",sans-serif;
+    float: left;
+    margin-top: 30px;
+}
+
+.section_na {
+    margin-top: 30px;
+    float: right;
+}
+
+.new_album_cate {
+    display: flex;
+    list-style: none;
+}
+
+.category {
+    margin-left:13px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    color: #1A1A1A;
+}
+
+.category:nth-child(3) {
+    margin-right: 35px;
+}
+
+.page_num {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.buttons {
+    display: list-item;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    left: 255px;
+}
+
+.album_btn .prev {
+    float: right;
+    width: 20px;
+    height: 17px;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    right: 279px;
+    background: url(//cdnimg.melon.co.kr/resource/image/web/main/bg_btn_page02.png) no-repeat left -220px;
+}
+
+.album_btn .next {
+    float: right;
+    width: 20px;
+    height: 17px;
+    position: relative;
+    right: 240px;
+    background: url(//cdnimg.melon.co.kr/resource/image/web/main/bg_btn_page02.png) no-repeat right -220px;
+}
+
+.outer {
+    width: 480px;
+    height: 320px;
+    display: block;
+}
+
+.hover_div1 {
+    width: 156px;
+    height: 156px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    opacity: 0;
+    transition: all 0.1s;
+    padding-top: 65px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.hover_div1:hover {
+    opacity: 1;
+}
+
+.hover_div2 {
+    width: 156px;
+    height: 156px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 159px;
+    opacity: 0;
+    transition: all 0.1s;
+    padding-top: 65px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.hover_div2:hover {
+    opacity: 1;
+}
+
+.hover_div3 {
+    width: 156px;
+    height: 156px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 318px;
+    opacity: 0;
+    transition: all 0.1s;
+    padding-top: 65px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.hover_div3:hover {
+    opacity: 1;
+}
+
+.hover_div4 {
+    width: 156px;
+    height: 156px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 159px;
+    opacity: 0;
+    transition: all 0.1s;
+    padding-top: 65px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.hover_div4:hover {
+    opacity: 1;
+}
+
+.hover_div5 {
+    width: 156px;
+    height: 156px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 159px;
+    left: 159px;
+    opacity: 0;
+    transition: all 0.1s;
+    padding-top: 65px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.hover_div5:hover {
+    opacity: 1;
+}
+
+.hover_div6 {
+    width: 156px;
+    height: 156px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 159px;
+    left: 318px;
+    opacity: 0;
+    transition: all 0.1s;
+    padding-top: 65px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.hover_div6:hover {
+    opacity: 1;
+}
+
+.new_album_title {
+    text-align: center;
+    color: white;
+}
+
+.new_album_artist {
+    text-align: center;
+    color: white;
+}
+
+.new_album_img1 {
+    width: 156px;
+    height: 156px;
+    float: left;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+
+
+.event_list {
+    width: 236px;
+    height: 370px;
+    position: absolute;
+    top: 42px;
+    left: 480px;
+}
+
+.play_control {
+    width: 113px;
+    height: 15px;
+    list-style: none;
+    display: flex;
+}
+
+.play_control .indicators {
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 100%;
+    cursor: pointer;
+    margin-right: 5px;
+    position: relative;
+    left: 190px;
+}
+
+.event_item:nth-child(2), 
+.event_item:nth-child(3) {
+    display: none;
+}
+
+.event_inner img {
+    cursor: pointer;
+}
+
+.button_login {
+    position: absolute;
+    top: 57px;
+    left: 720px;
+    background: #fbfbfb;
+    border: 1px solid rgb(209, 208, 208);
+    width: 280px;
+    height: 117px;
+    padding: 17px 17px;
+
+}
+
+.top_area {
+    display: flex;
+    
+}
+
+.top_area p {
+    font-size: 11px;
+    color: #646464;
+}
+
+.top_area a {
+    margin-left: 40px;
+    font-size: 11px;
+}
+
+.top_area a:link {
+    color: #646464;
+}
+
+.top_area a:visited {
+    color: #646464;
+}
+
+.button_login button {
+    width: 244px;
+    height: 42px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(9, 219, 72);
+    cursor: pointer;
+}
+
+.button_login button:hover {
+    background-color: rgb(3, 180, 56);
+}
+
+.ad_concert {
+    position: absolute;
+    top : 185px;
+    left: 720px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.hot_issue {
+    margin-top: 25px;
+    position: relative;
+}
+
+.title_link {
+    float: left;
+    width: 70px;
+    font-size: 15px;
+    color: #1A1A1A;
+    height: 15px;
+    white-space:nowrap
+}
+
+.txt_intro {
+    width: 300px;
+    padding-left: 12px; 
+    font-size: 12px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 2px;
+    color: #646464;
+    font-weight: 300;
+}
+
+
+/* 인기 있어요 페이지번호 및 좌우 버튼 */
+.page_num2 {
+    font-size: 12px;
+    position: relative;
+    bottom: 12px;
+    top: -13px;
+    left: 200px;
+}
+
+.buttons2 {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    bottom: 12px;
+    left: 290px;
+}
+
+.buttons2 {
+    display: list-item;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 255px;
+    list-style: none;
+}
+
+.album_btn2 .prev2 {
+    float: right;
+    width: 20px;
+    height: 17px;
+    font-size: 0;
+    line-height: 0;
+    position: relative;
+    right: 10px;
+    background: url(//cdnimg.melon.co.kr/resource/image/web/main/bg_btn_page02.png) no-repeat left -220px;
+}
+
+.album_btn2 .next2 {
+    float: right;
+    width: 20px;
+    height: 17px;
+    position: relative;
+    right: -30px;
+    background: url(//cdnimg.melon.co.kr/resource/image/web/main/bg_btn_page02.png) no-repeat right -220px;
+}
+/* 인기 있어요 페이지번호 및 좌우 버튼 끝 */
+
+
+/* 인기 있어요 1/2 */
+.popularity {
+    width: 710px;
+}
+
+.bg_album_frame_left {
+    width: 350px;
+    height: 251px;
+    list-style: none;
+}
+
+.bg_album_frame_left img {
+    width: 350px;
+    height: 240px;
+    cursor: pointer;
+}
+
+.bg_album_frame_right1 {
+    list-style: none;
+    position: absolute;
+    top: 32px;
+    left: 370px;
+    cursor: pointer;
+    display: flex;
+}
+
+.popularity_title {
+    width: 211px;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: 130px;
+}
+
+.pupularity_desc {
+    width: 211px;
+    font-size: 12px;
+    color: #646464;
+    position: absolute;
+    top: 20px;
+    left: 130px;
+}
+
+.popularity_bar {
+    display: flex;
+    font-size: 11px;
+    position: absolute;
+    top: 60px;
+    left: 130px;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.popularity_bar a:link {
+    color: #7CB710;
+}
+
+.popularity_bar a:visited {
+    color: #7CB710;
+}
+
+.popularity_bar p {
+    position: relative;
+    color: #646464;
+    left: 10px;
+    background: url(/img/footer__line3.png) no-repeat left 4px;
+    padding-left: 10px;
+}
+
+.bg_album_frame_right2 {
+    list-style: none;
+    position: absolute;
+    top: 116px;
+    left: 370px;
+    cursor: pointer;
+}
+
+.bg_album_frame_right3 {
+    list-style: none;
+    position: absolute;
+    top: 200px;
+    left: 370px;
+    cursor: pointer;
+}
+
+.bg_album_frame_bottom {
+    list-style: none;
+    display: flex;
+}
+
+.bg_album_frame_bottom img {
+    width: 164px;
+    height: 106px;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.bottom_title {
+    font-size: 12px;
+    color: #333333;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bottom_desc {
+    font-size: 12px;
+    color: #888888;
+    cursor: pointer;
+}
+
+.popularity_bar_bottom {
+    white-space: nowrap;
+    display: flex;
+    font-size: 11px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.popularity_bar_bottom a {
+    padding-right: 10px;
+}
+
+.popularity_bar_bottom a:link {
+    color: #7CB710;
+}
+
+.popularity_bar_bottom a:visited {
+    color: #7CB710;
+}
+
+
+.popularity_bar_bottom p {
+    color: #646464;
+    background: url(../img/footer__line3.png) no-repeat left 4px;
+    padding-left: 10px;
+}
+/* 인기 있어요 1/2 끝 */
+
+
+/* 인기있어요 2/2 */
+.popularity2 {
+    list-style: none;
+}
+
+.popular_div {
+    width: 223px;
+    margin-right: 20px;
+    height: 204;
+    cursor: pointer;
+}
+
+.popular_div:nth-child(4),
+.popular_div:nth-child(5),
+.popular_div:nth-child(6) {
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.popular_div img {
+    width: 223px;
+}
+
+.popular_div h3 {
+    font-weight: bold;
+    font-size: 12px;
+    color: #333;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    
+}
+
+.popular_div h3:hover {
+    text-decoration: underline;
+}
+
+.popular_div span {
+    font-size: 12px;
+    color: #888888;
+}
+
+.popular_div span:hover {
+    text-decoration: underline;
+}
+
+.popular_bottom {
+    display: flex; 
+}
+
+.popular_bottom a {
+    color: #7cb710;
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+.popular_bottom a:hover {
+    text-decoration: underline;
+}
+
+.popular_bottom p {
+    color: #646464;
+    font-size: 11px;
+}
+/* 인기있어요 2/2 끝*/
+
+/* 공지사항 */
+.notice {
+    width: 1000px;
+    border-top: 1px solid #dfe6e8;
+    clear: both;
+    height: 40px;
+    position: relative;
+    top: 11px;
+}
+
+.notice dl {
+    padding-right: 30px;
+    display: flex;
+}
+
+.notice .label {
+    width: 78px;
+    line-height: 15px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 13px;
+}
+
+.notice .label a:link{
+    color: #000;
+}
+
+.notice .label a:visited{
+    color: #000;
+}
+
+.notice_title {
+    margin-right: 20px;
+    padding-top: 8px;
+}
+
+.notice .mlog {
+    font-size: 11px;
+    color: #8a8a8a;
+    max-width: 700px;
+    white-space: nowrap;
+}
+
+.notice .date {
+    font-size: 11px;
+    color: #8a8a8a;
+    margin-left: 10px;
+    padding-top: 12px;
+}
+/* 공지사항 끝 */
+
+
+/* footer styles */
+
+.footer {
+    width: 100%;
+    background: url(../img/footer__line1.jpg) repeat-x;
+}
+
+.footer_inner {
+    width: 1000px;
+    height: 204px;
+    margin: auto;
+}
+
+.footer_menu {
+    width: 1000px;
+    height: 70px;
+    margin: auto;
+}
+
+.footer_menu ul {
+    float: right;
+    margin-top: 15px;
+}
+
+.footer_menu li {
+    margin-left: 20px;
+    display: inline;
+    font-size: 14px;
+    font-weight: 800;
+    color: #646464;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+.footer_menu :hover {
+    color: #404040;
+}
+
+.footer_policy {
+    height: 30px;
+}
+
+.footer_policy li {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #202020;
+    padding: 0 0 0 9px;
+    background: url(../img/footer__line2.png) no-repeat left 1px;
+}
+
+.footer_policy li:first-child {
+    margin-left: 0px;
+    padding-left: 0;
+    background: 0;
+}
+
+.footer_policy li:hover {
+    text-decoration: underline;
+    color: #101010;
+}
+
+.footer_info li {
+    display: inline;
+    margin-left: 4px;
+    font-size: 11px;
+    color: #707070;
+    padding: 0 0 0 9px;
+    background: url(../img/footer__line3.png) no-repeat left 4px;
+}
+
+.footer_info li.first {
+    margin-left: 0px;
+    padding-left: 0;
+    background: 0;
+}
+
+.footer_info span.info_check {
+    padding-right: 7px;
+    background: url(../img/footer_arrow.png) no-repeat 100% 50%;
+    cursor: pointer;
+}
+
+.footer_info span.email {
+    cursor: pointer;
+}
+
+.footer_info span.corporation {
+    cursor: pointer;
+}

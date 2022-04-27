@@ -1,0 +1,92 @@
+#content {
+    margin: 20px;
+    margin-left: 15px;
+    background: #fff;
+    width: 160px;
+    font-size: 12px;
+    z-index: 10;
+}
+
+#rank-list a {
+    color: black;
+    text-decoration: none;
+}
+
+#rank-list a:hover {
+    text-decoration: underline;
+}
+
+#rank-list {
+    overflow: hidden;
+    width: 140px;
+    height: 20px;
+    margin: 0;
+    background-color: white;
+    position: relative;
+    top: 5px;
+}
+
+#rank-list dt {
+    display: none;
+}
+
+#rank-list dd {
+    position: relative;
+    margin: 0;
+}
+
+#rank-list ol {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#rank-list li {
+    height: 20px;
+    line-height: 20px;
+}
+
+
+#rank-list-hover {
+    width: 170px;
+    height: 255px;
+    display: none;
+    background-color: white;
+    border: 1px solid rgb(158, 155, 155);
+    padding: 10px;
+    padding-left: 14px;
+    position: absolute;    
+    top: 85px;
+}
+
+#rank-list-hover li a:hover {
+    text-decoration: underline;
+}
+
+#rank-list-hover a:link {
+    color: black;
+}
+
+#rank-list-hover a:visited {
+    color: black;
+}
+
+#rank-list-hover ol {
+    list-style-type: none;
+}
+
+#rank-list-hover li {
+    padding-bottom: 8px;
+    display: flex;
+}
+
+#rank-list-hover li p {
+    margin-right: 10px;
+}
+
+#rank-list-hover li:nth-child(10) p {
+    margin-left: -6px;
+}

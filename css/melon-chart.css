@@ -1,0 +1,285 @@
+/* 멜론차트 시작 */
+
+.chart {
+    position: absolute;
+    top: 390px;
+    left: 720px;
+    width: 280px;
+}
+
+.chart h2 {
+    display: inline-block;
+    height: 25px;
+    font-size: 15px;
+}
+
+.wrap_chart {
+    position: relative;
+}
+
+.wrap_chart li{
+    list-style: none;
+}
+
+.chart1_btn {
+    position: absolute;
+    width: 93px;
+    height: 30px;
+    padding: 3px;
+    cursor: pointer;
+    color: green;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-top: 2px solid #8ac121;
+    border-left: 1px solid #dfe6e8;
+}
+
+.chart1_box {
+    display: inline;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 278px;
+    border: 1px solid #dfe6e8;
+}
+
+.chart_time {
+    position: absolute;
+    top: -52px;
+    right: 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #888;
+}
+
+.rank_list li {
+    height: 33px;
+    font-size: 12px;
+    border-bottom: 1px solid #dfe6e8;
+}
+
+.rank_list li:first-child {
+    height: 69px;
+}
+
+.rank_list li:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.rank_list li:first-child .rank {
+    font-size: 30px;
+    margin-top: 13px;
+}
+
+.rank_list li:first-child .chart_img {
+    display: block;
+}
+
+.rank_list li:first-child .song {
+    font-weight: 900;
+    margin-top: 16px;
+}
+
+.rank_list li:first-child .artist {
+    width: 130px;
+    margin-top: 3px;
+}
+
+.rank_list li:first-child .fan_btn {
+    margin-top: 24px;
+}
+
+.rank {
+    display: block;
+    float: left;
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-right: 20px;
+    color: #777777;
+}
+
+.chart_img{
+    display: none;
+    float: left;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.chart_img img:hover {
+    cursor: pointer;
+}
+
+.song {
+    display: block;
+    float: left;
+    width: 100px;
+    overflow: hidden;
+    margin-top: 8px;
+    margin-right: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    color: black;
+}
+
+.song span {
+    cursor: pointer;
+}
+
+.song span:hover {
+    text-decoration: underline;
+}
+
+.age_19 {
+    display: block;
+    float: left;
+    width: 13px;
+    height: 16px;
+    margin-right: 5px;
+    background: url(../img/chart/age_19_icon.png) no-repeat -162px 1px;
+}
+
+.artist {
+    display: block;
+    float: left;
+    width: 60px;
+    color: #606060;
+    overflow: hidden;
+    margin-top: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.artist span {
+    cursor: pointer;
+}
+
+.artist span:hover {
+    text-decoration: underline;
+}
+
+.fan_btn {
+    position: absolute;
+    right: 16px;
+    width: 21px;
+    height: 21px;
+    margin-top: 6px;
+    background: url(../img/chart/fan_btn_icon.png) no-repeat 0 -220px;
+    cursor: pointer;
+}
+
+.fan_btn:hover {
+    background-position: -21px -220px;
+}
+
+.chart_additional_area {
+    height: 39px;
+    padding: 6px 8px;
+}
+
+.shuffle_btn {
+    width: 76px;
+    height: 26px;
+    margin-top: 1px;
+    margin-left: 3px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: #a0a0a0 solid 1px;
+    border-radius: 3px;
+}
+
+.shuffle_btn:hover {
+    border-color: #707070;
+}
+
+.shuffle {
+    float: left;
+    width: 21px;
+    height: 18px;
+    margin-left: 2px;
+}
+
+.shuffle_span {
+    float: left;
+    margin-top: 1px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.all_view {
+    float: right;
+    color: #646464;
+    font-size: 12px;
+    margin: 6px 5px 0 0;
+    padding-right: 8px;
+    cursor: pointer;
+    background: url(../img/footer_arrow.png) no-repeat 100% 50%;
+}
+
+.chart2_btn {
+    position: absolute;
+    width: 93px;
+    height: 30px;
+    top: 0;
+    left: 93px;
+    padding: 3px;
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-top: 1px solid #dfe6e8;
+    border-left: 1px solid #dfe6e8;
+}
+
+.chart2_box {
+    display: none;
+    width: 278px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    border: 1px solid #dfe6e8;
+}
+
+
+.chart3_btn {
+    position: absolute;
+    width: 92px;
+    height: 30px;
+    top: 0;
+    left: 186px;
+    padding: 4px;
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #dfe6e8;
+    border-bottom: 0;
+}
+
+.chart3_box {
+    display: none;
+    width: 278px;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    border: 1px solid #dfe6e8;
+}
+
+.chart3_box .rank_list .artist {
+    width: 170px;
+    color: #1a1a1a;
+}
+
+.chart3_box .rank_list li:first-child .artist{
+    font-weight: 900;
+    margin-top: 24px;
+}
+
+/* 멜론차트 끝 */
