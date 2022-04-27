@@ -6,4 +6,3 @@
 - 본 소스코드는 학습을 위한 목적으로 작성되었습니다.
 ![image](https://user-images.githubusercontent.com/17917009/153367326-f582817b-c258-4c63-b04e-da4d9385db4f.png)
 - HTML, CSS, Javascript, jquery만으로 개발
-- 
